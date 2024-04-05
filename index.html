@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="shortcut icon" href="./images/timer.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/fonts.css">
+</head>
+<body>
+    <form class="form" action="">
+        <h1 class="form__title">Timer</h1>
+        <input class="minutes" type="text" placeholder="Minutes">
+        <p class="min_erore">please enter a number</p>
+        <input class="second" type="text" placeholder="Second" maxlength="2">
+        <p class="sec_erore">please enter a number</p>
+        <button class="btn-timer">start</button>
+    </form>
+    <div class="box_timer">
+        <input class="timer1 timer" type="text" readonly value="0">
+        <input class="timer2 timer" type="text" readonly value="0">
+        <span class="item">:</span>
+        <input class="timer3 timer" type="text" readonly value="0">
+        <input class="timer4 timer" type="text" readonly value="0">
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

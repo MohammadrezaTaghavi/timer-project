@@ -1,0 +1,108 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #161D26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.form{
+    background-color: #1F2935;
+    /* padding: 8rem 7rem; */
+    width: 30rem;
+    /* height: 30rem; */
+    border-radius: 0.4rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    transition: all 700ms ease;
+}
+.form__title{
+    color: white;
+    font-size: 3rem;
+    margin: 1rem;
+    font-family: "poppins regular";
+}
+.minutes,.second{
+    width: 17rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-left: 0.8rem;
+    font-family: "poppins semibold";
+}
+.second{
+    margin-top: 2rem;
+}
+.btn-timer{
+    margin: 2rem;
+    width: 9rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: all 150ms ease-in;
+    font-family: "poppins semibold";
+}
+.btn-timer:hover{
+    background-color: #2f3d4e;
+    color: white;
+}
+.btn-timer:active{
+    transform: scale(1.1);
+}
+button{
+    border: none;
+}
+.min_erore,.sec_erore{
+    display: none;
+    color: rgb(202, 0, 0);
+    font-family: "poppins regular";
+    margin-right: 6rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+.box_timer{
+    display: none;
+}
+.timer{
+    width: 10rem;
+    height: 12rem;
+    text-align: center;
+    font-family: "roboto regular";
+    font-size: 5rem;
+    border-radius: 0.5rem;
+}
+.item{
+    font-size: 5rem;
+    color: #fff;
+}
+@media (max-width:768px) {
+    .form{
+        width: 25rem;
+    }
+    .timer{
+        width: 7rem;
+        height: 9rem;
+        font-size: 3rem;
+    }
+}
+@media (max-width:500px) {
+    .form{
+        width: 100vw;
+    }
+    .timer{
+        width: 5rem;
+        height: 7rem;
+    }
+}
